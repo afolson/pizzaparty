@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Pizza Calculator">
+    <meta name="author" content="Amanda Folson">
+    <title>Pizza Party</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link href="assets/pizza.css" rel="stylesheet">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="assets/pizza.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
+          <div class="inner cover">
+            <h3>Aww Yiss Pizza</h3>
+              <div id="pizzaparty" style="display:none;">
+                <h2>You should order about</h2>
+                <div id="partypeople">0</div>
+                <div>
+                  <canvas id="myChart" width="300" height="300"></canvas>
+                </div>
+                <div id="js-legend" class="chart-legend"></div>
+                <div id="chartjs-tooltip"></div>
+                <!-- <button class="start_over">Start over</button> -->
+              </div>
+              <div id="letsparty">
+                  <h2>Number of Pizza Partiers</h2>
+                  <form id="party" action="#" onsubmit="return makeMePizza()">
+                    <div class="form-group">
+                      <input type="number" class="form-control" id="partycount" pattern="\d*" placeholder="0">
+                    </div>
+                    <button class="btn" onclick="makeMePizza()">Go!</button>
+                  </form>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -58,7 +58,11 @@ function makeMePizza(){
         The cheese pizza count is rounded up so that we order at least one pizza. 
         Cheese seems like a safe choice.
     */
-    var partycount = document.getElementById('partycount').value;
+    var partycount = +document.getElementById('partycount').value;
+    if (document.getElementById('mikegrb').checked ) {
+        partycount += 7;  // a mikegrb eats one pizza
+    }
+
     var pizzacount = Math.ceil(partycount * 3/8);
     var cheesecount = Math.ceil(0.30 * pizzacount); // 30%
     var pepperonicount = Math.floor(0.20 * pizzacount); // 20%

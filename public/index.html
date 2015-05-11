@@ -36,13 +36,16 @@
                 <!-- <button class="start_over">Start over</button> -->
               </div>
               <div id="letsparty">
-                  <h2>Number of Pizza Partiers</h2>
-                  <form id="party" action="#" onsubmit="return makeMePizza()">
-                    <div class="form-group">
-                      <input type="number" class="form-control" id="partycount" pattern="\d*" placeholder="0">
+                <form id="party" action="#" onsubmit="return makeMePizza()">
+                  <div class="form-group">
+                    <h2>Number of Pizza Partiers</h2>
+                    <input type="number" class="form-control" id="partycount" pattern="\d*" placeholder="0">
+                    <div class="checkbox">
+                      <label><input type="checkbox" id="mikegrb"> Is mikegrb one of them?</label>
                     </div>
-                    <button class="btn" onclick="makeMePizza()">Go!</button>
-                  </form>
+                  </div>
+                  <button class="btn" onclick="makeMePizza()">Go!</button>
+                </form>
               </div>
           </div>
         </div>

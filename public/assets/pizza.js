@@ -60,7 +60,7 @@ function makeMePizza(){
     */
     var partycount = +document.getElementById('partycount').value;
     if (document.getElementById('mikegrb').checked ) {
-        partycount += 7;  // a mikegrb eats one pizza
+        partycount += 2;  // a mikegrb eats one pizza
     }
 
     var pizzacount = Math.ceil(partycount * 3/8);
